@@ -97,7 +97,7 @@ async function deriveToken(sharedSecret: string, key: string): Promise<string> {
 
 export async function proxyFetch(url: string, options?: RequestInit): Promise<Response> {
   try {
-    const proxy = "https://i6.ilysm.nl";
+    const proxy = "https://wyzie-sub.ancoknamhay.workers.dev";
     const proxyUrl = new URL(proxy);
     const userAgent = USER_AGENTS[Math.floor(Math.random() * USER_AGENTS.length)];
     const defaultHeaders = getHeaders(userAgent);
